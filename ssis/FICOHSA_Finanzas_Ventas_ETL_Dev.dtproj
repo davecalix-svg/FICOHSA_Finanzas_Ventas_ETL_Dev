@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DAVECALIX</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARZ4TJeTWHUqBj9lVFKtWKAAAAAACAAAAAAAQZgAAAAEAACAAAAAT/wCWbqFp9jCJjXad8sYxEUsjEyAs0dfLVTmi3VUsSwAAAAAOgAAAAAIAACAAAABJMvjjmLuzuBk7BmDEcdyhDJAaT1YzKhO9EM7R20d6c5AAAAC3tiA5GuoPukGovjVg7DZy3IEHCddu0OzWDXujTE7Yc6aeKVtW0OVZ1ojARjKQpiNiP23uYZ/TWEDrbHwp2/BoCFYl4wFFf+4a3bBMDxFXaWkt0KoTP/2SQBtMCQg/bublTTDArKSZ0DhZ8HusQWmfoVBF3067lDnXZV+y7OPKLzITQR+YvqhTZaqeEzQ7joJAAAAAlEzgSVq0w1A4pKTz3ieaJPZ3tAUU8xsTeXuYunSPEpVN1nzCoJBdDhDm32x5V9z+91sCajMaOY09/ELR4BYZvA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARZ4TJeTWHUqBj9lVFKtWKAAAAAACAAAAAAAQZgAAAAEAACAAAACFX2IqUp0yOKh+ceACdDe8J/mA/fSZqtfkAAKIz67q+QAAAAAOgAAAAAIAACAAAABarIphYHbC/NKSj1n/g0bi6UjOxDryzoHfHu0CNV7FHJAAAAD6e1iSdTYYvKIJazlQVr5DaUG6+iS70A7Z4LSxABezhHeAyqB6td6c8/NBPmLIdnIot5ypftar7AlEjQlJsOPLAUjVwJezw2tI/muOIStM0iZkxC+t+NZljeEd4n7PspDbqHGaDDj+fQISHevMucitqjMZqigpCTxqNcuV7uwl/s964kjro03kRB4Hni7PMuFAAAAAqjwo1U6Mbys181sasRiE465HMfQy0yID6bGY1jgNDqFVSms7wf2Cw5CYhuO3nnaMCymF+SJtIa70qRrGyZuSug==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Finanzas_Ventas_CargaCSV_Dev</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">136</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">157</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{2AFD716C-AAC2-4F8D-AA0A-771E7F176790}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{300CBF52-5D12-4882-99DA-975FDDA399B6}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -272,7 +272,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Cursos\SSIS\pagos.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV\pagos.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -363,6 +363,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -467,7 +469,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\Cursos\SSIS\ventas.csv</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV\ventas.csv</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

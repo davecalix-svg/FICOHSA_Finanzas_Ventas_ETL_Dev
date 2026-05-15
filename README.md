@@ -11,11 +11,13 @@ Paquete SSIS para la carga y validación de archivos CSV de Ventas y Pagos hacia
 FICOHSA_Finanzas_Ventas_ETL_Dev/
 │
 ├── 📁 sql/
-│   └── 01_Crear_BD_Tablas.sql          # Creación de BD y tablas
+│   └── 01_Crear_BD_Tablas.sql            # Creación de BD y tablas
 │
 ├── 📁 data/
-│   ├── ventas.csv                       # Archivo de prueba Ventas
-│   └── pagos.csv                        # Archivo de prueba Pagos
+│   ├── ventas.csv                        # Archivo de prueba Ventas
+│
+├── 📁 docker/
+│   ├── docker-compose.yml                # Archivo de composicion de docker
 │
 ├── 📁 ssis/
 │   └── Finanzas_Ventas_CargaCSV_Dev.dtsx  # Paquete SSIS principal

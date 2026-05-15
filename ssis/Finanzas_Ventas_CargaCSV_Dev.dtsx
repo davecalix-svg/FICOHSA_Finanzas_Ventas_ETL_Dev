@@ -11,8 +11,8 @@
   DTS:LocaleID="18442"
   DTS:ObjectName="Finanzas_Ventas_CargaCSV_Dev"
   DTS:PackageType="5"
-  DTS:VersionBuild="152"
-  DTS:VersionGUID="{AB5E9D65-4E0C-45F7-A232-4223C5AC91AE}">
+  DTS:VersionBuild="158"
+  DTS:VersionGUID="{903C10B5-FE63-4B5B-A71C-70A40132DC66}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARZ4TJeTWHUqBj9lVFKtWKAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA45kTF6RuhAqXoTGR0ZAvO1MUKEfyAmIGkiEIZtu5uLQAAAAAOgAAAAAIAACAAAADlm+1MyR3g5Sn4CvyCaD/Y6UkowNmrLR0LVeOT5zDjSSAAAADmMfGljvDPuc+eg7Rn/pH2NvjsPJp/gGaHBzZDrLBRKkAAAADVD/rqvWgzN79gzWKDTOib6MbcaRaYHBMy+AYLf6YGDbtHgBcQVud0Jylw5Q9/33K6w4etiJypFemzu+rOHhR4</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARZ4TJeTWHUqBj9lVFKtWKAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABo4Mjdgtw7ZZVxEjC/bmdBs+eijkTRiY78Hj/YdBs3sgAAAAAOgAAAAAIAACAAAADXtxeRB/h6/lAHnm15EzKbioPuYrRmSM+kBRPbhE2sGSAAAADV9UJjvcN6ijaEdQyLUfUek7rUln2ya8dQOAfNUOc/L0AAAAAJoyCsOoDta22yWm661Sz58rtBSKFdr9727+udey5NUrS6B4S6NuNEW00bcFq2IOkkbMXnmbn0dWhcUI1sVyHt</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -48,7 +48,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Cursos\SSIS\pagos.csv">
+          DTS:ConnectionString="C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV\pagos.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PagoId"
-              DTS:DTSID="{9FD909DA-60D2-44DC-B4AD-CA058B6CE48E}"
+              DTS:DTSID="{A3CCCD0E-064D-4C0F-ADE0-F02B7F7B9EF1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ClienteId"
-              DTS:DTSID="{1A83FA80-5895-4AD8-9C7F-5B863F406D23}"
+              DTS:DTSID="{E6903EC2-9A68-4587-8A6E-08ABC4FCF0E7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="NumeroTransaccion"
-              DTS:DTSID="{4B301B08-9631-4921-9A9F-F329A1E86F25}"
+              DTS:DTSID="{D5EB80C7-A106-48CA-B91B-1362D480AD37}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Monto"
-              DTS:DTSID="{B205030A-5D31-481C-BC1C-D29305F12072}"
+              DTS:DTSID="{B66BF322-D074-4677-B91B-F34757FD9D7D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Moneda"
-              DTS:DTSID="{71216D03-89B2-4841-91B0-D76667C9D9E4}"
+              DTS:DTSID="{662FEC85-352D-40B3-8432-80EB6F460222}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FechaPago"
-              DTS:DTSID="{366914B5-DC16-4A51-A32E-4844C1713942}"
+              DTS:DTSID="{F0047ADC-3FB2-47A2-BD7C-F6D6BF6AB8A9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="HoraPago"
-              DTS:DTSID="{7AA60559-E85A-4B16-BE81-07764A4A1463}"
+              DTS:DTSID="{F9146CD2-3BAB-43E9-BAB8-7F31B83D5B1A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MetodoPago"
-              DTS:DTSID="{A8865AF0-6606-42A7-807F-EC5F09A03FA6}"
+              DTS:DTSID="{4B2297F0-4853-463A-9CE9-D2CEC129044F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +129,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Canal"
-              DTS:DTSID="{A6E77453-A271-416D-8A74-2A73AD38BCA1}"
+              DTS:DTSID="{B0E7B48E-23B2-442E-8EFC-D1B8380B3B6D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +138,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Estado"
-              DTS:DTSID="{DFC2CA94-E0E5-41A2-8C81-360FB2591E7B}"
+              DTS:DTSID="{474C3EAD-3960-40A8-8730-A73B9A8E18A9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CuentaOrigen"
-              DTS:DTSID="{AF507F16-7540-4827-891F-874F80FD9A5B}"
+              DTS:DTSID="{D485ECF4-3064-4F91-AAEE-51C63AB9E3B5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CuentaDestino"
-              DTS:DTSID="{66627A0A-FA5C-45C3-BAF9-964F5D99F7A7}"
+              DTS:DTSID="{1D03182A-427A-40DB-B1B1-AA1374BB88EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -165,7 +165,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Descripcion"
-              DTS:DTSID="{B9182827-A873-4E81-B418-65B1D2DA5B24}"
+              DTS:DTSID="{E5BC401E-0E0D-496A-9967-5DDEC4ECE2ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +174,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Referencia"
-              DTS:DTSID="{3A5F0A56-B497-4BA1-BA55-E9EDC2FB9536}"
+              DTS:DTSID="{98BED118-00EA-4DA6-A7B7-A0D521F8D557}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -183,7 +183,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="UsuarioCreacion"
-              DTS:DTSID="{4BC36DFB-337E-441F-8A7F-09F816340BF6}"
+              DTS:DTSID="{166DB57E-366F-4699-B264-F05E7C194C6D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +192,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="FechaCreacion"
-              DTS:DTSID="{9E287066-9B9E-48A5-AAED-D5AEFB9AB926}"
+              DTS:DTSID="{B524E4B5-3C17-4433-BE7D-96179AB21AC6}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -213,7 +213,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Cursos\SSIS\ventas.csv">
+          DTS:ConnectionString="C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV\ventas.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -222,7 +222,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha"
-              DTS:DTSID="{0080684E-2FAB-4AAB-8692-BE5809A95DD2}"
+              DTS:DTSID="{BC16DCE4-07E5-4F21-8895-1082113D3B6D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -231,7 +231,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Producto"
-              DTS:DTSID="{882693CA-EC11-4F0F-972F-49BEB03B7F62}"
+              DTS:DTSID="{2347EA9B-714C-4E23-9241-9935F350D1E3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -240,7 +240,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Cantidad"
-              DTS:DTSID="{B8F3B7C8-1DDB-4876-BDCA-EF4ED6852F91}"
+              DTS:DTSID="{FF595888-0EE0-4E01-B4C7-F855ADF32A30}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -249,7 +249,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PrecioUnitario"
-              DTS:DTSID="{E2987C4C-1C8C-4E85-887E-B30A15FFD5A2}"
+              DTS:DTSID="{E229E995-29E3-481D-9742-812DB060AF33}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -277,7 +277,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="FechaInicio">
       <DTS:VariableValue
-        DTS:DataType="7">5/15/2026 1:46:22 PM</DTS:VariableValue>
+        DTS:DataType="7">5/15/2026 5:33:01 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -352,7 +352,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="NombreArchivo">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Cursos\SSIS\ventas.csv</DTS:VariableValue>
+        DTS:DataType="8">C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV\ventas.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -363,7 +363,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="RutaArchivos">
       <DTS:VariableValue
-        DTS:DataType="8">C:\Cursos\SSIS\</DTS:VariableValue>
+        DTS:DataType="8">C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV\</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -3642,7 +3642,7 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{DF02D845-24CE-47EA-887E-499D69EA0A6A}"
           SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="INSERT INTO LogEjecucion (&#xA;    FechaEjecucion, FilasValidas, FilasInvalidas,&#xA;    FilasErrorConversion, NombrePaquete, NombreArchivo,&#xA;    MensajeError, Estado, DuracionSegundos,&#xA;    FilasPagosValidas, FilasPagosInvalidas, FilasErrorConvPagos&#xA;) VALUES (&#xA;    GETDATE(),0,0,0,'Finanzas_Ventas_CargaCSV_Dev','C:\Cursos\SSIS\ventas.csv','','EXITOSO',10246,0,0,0)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="INSERT INTO LogEjecucion (&#xA;    FechaEjecucion, FilasValidas, FilasInvalidas,&#xA;    FilasErrorConversion, NombrePaquete, NombreArchivo,&#xA;    MensajeError, Estado, DuracionSegundos,&#xA;    FilasPagosValidas, FilasPagosInvalidas, FilasErrorConvPagos&#xA;) VALUES (&#xA;    GETDATE(),0,0,0,'Finanzas_Ventas_CargaCSV_Dev','C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV\ventas.csv','','EXITOSO',772,0,0,0)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::FilasValidas"
@@ -3774,6 +3774,10 @@ WHERE Id = (SELECT MAX(Id) FROM LogEjecucion)"</DTS:PropertyExpression>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="163,42"
+          Id="Package\CargaPagosCSV"
+          TopLeft="120,213" />
+        <NodeLayout
           Size="166,42"
           Id="Package\CargaVentasCSV"
           TopLeft="119,143" />
@@ -3781,10 +3785,6 @@ WHERE Id = (SELECT MAX(Id) FROM LogEjecucion)"</DTS:PropertyExpression>
           Size="171,42"
           Id="Package\RegistrarEjecucion"
           TopLeft="116,287.428571428571" />
-        <NodeLayout
-          Size="163,42"
-          Id="Package\CargaPagosCSV"
-          TopLeft="120,213" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="201.75,185">
@@ -3844,6 +3844,335 @@ WHERE Id = (SELECT MAX(Id) FROM LogEjecucion)"</DTS:PropertyExpression>
       </GraphLayout>
     </LayoutInfo>
   </DtsEventHandler>
+  <TaskHost
+    design-time-name="Package\CargaPagosCSV">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="159,42"
+          Id="Package\CargaPagosCSV\SRC_FF_Pagos"
+          TopLeft="13.2857142857143,48.2857142857143" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\CargaPagosCSV\CNV_Pagos"
+          TopLeft="29.2857142857143,134.285714285714" />
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[Salida de origen de archivo plano]"
+          TopLeft="95.7857142857143,90.2857142857143">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44"
+              Start="0,0"
+              End="0,36.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="188,42"
+          Id="Package\CargaPagosCSV\SPL_ValidacionPagos"
+          TopLeft="7.28571428571431,238.285714285714" />
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[Salida de conversión de datos]"
+          TopLeft="100.035714285714,176.285714285714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,62"
+              Start="0,0"
+              End="0,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="175,42"
+          Id="Package\CargaPagosCSV\CNT_PagosValidos"
+          TopLeft="17.2857142857143,329.285714285714" />
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[PagosValidos]"
+          TopLeft="103.035714285714,280.285714285714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,49"
+              Start="0,0"
+              End="0,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-29.237578125,14.91845703125,58.47515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\CargaPagosCSV\DST_OLE_Pagos"
+          TopLeft="20.2857142857143,422.285714285714" />
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[Salida de Recuento de filas 1]"
+          TopLeft="104.035714285714,371.285714285714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51"
+              Start="0,0"
+              End="0,43.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="182,42"
+          Id="Package\CargaPagosCSV\CNT_PagosInvalidos"
+          TopLeft="299.285714285714,238.285714285714" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\CargaPagosCSV\DER_ErroresPagos"
+          TopLeft="305.285714285714,330.285714285714" />
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[Salida de Recuento de filas 11]"
+          TopLeft="391.785714285714,280.285714285714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,50"
+              Start="0,0"
+              End="0,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="212,42"
+          Id="Package\CargaPagosCSV\DST_OLE_ErroresNegocio"
+          TopLeft="289.285714285714,424.285714285714" />
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[Salida de columna derivada]"
+          TopLeft="394.285714285714,372.285714285714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,52"
+              Start="0,0"
+              End="0,44.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[PagosInvalidos]"
+          TopLeft="195.285714285714,259.285714285714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="104,0"
+              Start="0,0"
+              End="96.4999999999997,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="96.4999999999997,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="14.8524218749998,5,66.79515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="231,42"
+          Id="Package\CargaPagosCSV\CNT_ErroresConversionPagos"
+          TopLeft="331.730158730158,134.174603174603" />
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[RutaErrorTecnico]"
+          TopLeft="168.285714285714,155.230158730159">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="163.444444444444,0"
+              Start="0,0"
+              End="155.944444444444,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="155.944444444444,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="39.5601909722222,5,76.8240625,9.470703125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="231,42"
+          Id="Package\CargaPagosCSV\DER_ErroresConversionPagos"
+          TopLeft="519.841269841269,239.84126984127" />
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[Salida de Recuento de filas 12]"
+          TopLeft="447.230158730159,176.174603174603">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="188.111111111111,63.6666666666666"
+              Start="0,0"
+              End="188.111111111111,56.1666666666666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.8333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.8333333333333"
+                    Point2="0,31.8333333333333"
+                    Point3="4,31.8333333333333" />
+                  <mssgle:LineSegment
+                    End="184.111111111111,31.8333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="184.111111111111,31.8333333333333"
+                    Point2="188.111111111111,31.8333333333333"
+                    Point3="188.111111111111,35.8333333333333" />
+                  <mssgle:LineSegment
+                    End="188.111111111111,56.1666666666666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="227,42"
+          Id="Package\CargaPagosCSV\DST_OLE_ErroresConversion"
+          TopLeft="522.5,426.25" />
+        <EdgeLayout
+          Id="Package\CargaPagosCSV.Paths[Salida de columna derivada1]"
+          TopLeft="635.670634920635,281.84126984127">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,144.40873015873"
+              Start="0,0"
+              End="0,136.90873015873">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,136.90873015873" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CargaPagosCSV\DST_OLE_ErroresNegocio">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CargaPagosCSV\DST_OLE_Pagos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CargaPagosCSV\DST_OLE_ErroresConversion">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\CargaVentasCSV">
     <LayoutInfo>
@@ -4236,335 +4565,6 @@ WHERE Id = (SELECT MAX(Id) FROM LogEjecucion)"</DTS:PropertyExpression>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\CargaVentasCSV\DST_OLE_ErroresConversion">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\CargaPagosCSV">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="159,42"
-          Id="Package\CargaPagosCSV\SRC_FF_Pagos"
-          TopLeft="13.2857142857143,48.2857142857143" />
-        <NodeLayout
-          Size="139,42"
-          Id="Package\CargaPagosCSV\CNV_Pagos"
-          TopLeft="29.2857142857143,134.285714285714" />
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[Salida de origen de archivo plano]"
-          TopLeft="95.7857142857143,90.2857142857143">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,44"
-              Start="0,0"
-              End="0,36.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="188,42"
-          Id="Package\CargaPagosCSV\SPL_ValidacionPagos"
-          TopLeft="7.28571428571431,238.285714285714" />
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[Salida de conversión de datos]"
-          TopLeft="100.035714285714,176.285714285714">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,62"
-              Start="0,0"
-              End="0,54.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="175,42"
-          Id="Package\CargaPagosCSV\CNT_PagosValidos"
-          TopLeft="17.2857142857143,329.285714285714" />
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[PagosValidos]"
-          TopLeft="103.035714285714,280.285714285714">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,49"
-              Start="0,0"
-              End="0,41.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-29.237578125,14.91845703125,58.47515625,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="166,42"
-          Id="Package\CargaPagosCSV\DST_OLE_Pagos"
-          TopLeft="20.2857142857143,422.285714285714" />
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[Salida de Recuento de filas 1]"
-          TopLeft="104.035714285714,371.285714285714">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,51"
-              Start="0,0"
-              End="0,43.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,43.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="182,42"
-          Id="Package\CargaPagosCSV\CNT_PagosInvalidos"
-          TopLeft="299.285714285714,238.285714285714" />
-        <NodeLayout
-          Size="176,42"
-          Id="Package\CargaPagosCSV\DER_ErroresPagos"
-          TopLeft="305.285714285714,330.285714285714" />
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[Salida de Recuento de filas 11]"
-          TopLeft="391.785714285714,280.285714285714">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50"
-              Start="0,0"
-              End="0,42.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="212,42"
-          Id="Package\CargaPagosCSV\DST_OLE_ErroresNegocio"
-          TopLeft="289.285714285714,424.285714285714" />
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[Salida de columna derivada]"
-          TopLeft="394.285714285714,372.285714285714">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52"
-              Start="0,0"
-              End="0,44.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,44.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[PagosInvalidos]"
-          TopLeft="195.285714285714,259.285714285714">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="104,0"
-              Start="0,0"
-              End="96.4999999999997,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="96.4999999999997,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="14.8524218749998,5,66.79515625,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="231,42"
-          Id="Package\CargaPagosCSV\CNT_ErroresConversionPagos"
-          TopLeft="331.730158730158,134.174603174603" />
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[RutaErrorTecnico]"
-          TopLeft="168.285714285714,155.230158730159">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="163.444444444444,0"
-              Start="0,0"
-              End="155.944444444444,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="155.944444444444,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="39.5601909722222,5,76.8240625,9.470703125"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="231,42"
-          Id="Package\CargaPagosCSV\DER_ErroresConversionPagos"
-          TopLeft="519.841269841269,239.84126984127" />
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[Salida de Recuento de filas 12]"
-          TopLeft="447.230158730159,176.174603174603">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="188.111111111111,63.6666666666666"
-              Start="0,0"
-              End="188.111111111111,56.1666666666666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.8333333333333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.8333333333333"
-                    Point2="0,31.8333333333333"
-                    Point3="4,31.8333333333333" />
-                  <mssgle:LineSegment
-                    End="184.111111111111,31.8333333333333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="184.111111111111,31.8333333333333"
-                    Point2="188.111111111111,31.8333333333333"
-                    Point3="188.111111111111,35.8333333333333" />
-                  <mssgle:LineSegment
-                    End="188.111111111111,56.1666666666666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="227,42"
-          Id="Package\CargaPagosCSV\DST_OLE_ErroresConversion"
-          TopLeft="522.5,426.25" />
-        <EdgeLayout
-          Id="Package\CargaPagosCSV.Paths[Salida de columna derivada1]"
-          TopLeft="635.670634920635,281.84126984127">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,144.40873015873"
-              Start="0,0"
-              End="0,136.90873015873">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,136.90873015873" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\CargaPagosCSV\DST_OLE_Pagos">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CargaPagosCSV\DST_OLE_ErroresNegocio">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\CargaPagosCSV\DST_OLE_ErroresConversion">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
