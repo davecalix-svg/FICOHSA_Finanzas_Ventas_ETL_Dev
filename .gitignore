@@ -1,14 +1,14 @@
-# Carpetas de compilación
+# Visual Studio
+.vs/
 bin/
 obj/
 
-# Archivos temporales de Visual Studio
-.vs/
-*.user
-*.suo
-*.vsidx
-*.db
-
-# Archivos de configuración local
+# SSIS user settings
 *.dtproj.user
-*.database
+
+# Logs
+*.log
+UpgradeLog.htm
+
+# Docker (si no es parte del proyecto)
+docker-compose.yml
