@@ -4,7 +4,7 @@
   Script: Creacion de Base de Datos y Tablas
   Version: 1.0
   Fecha: 2026-05-15
-  Autor: FICOHSA_Finanzas_Ventas_ETL_Dev
+  Autor: David Guzman
 =============================================================
 */
 

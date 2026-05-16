@@ -16,6 +16,9 @@ FICOHSA_Finanzas_Ventas_ETL_Dev/
 ├── 📁 data/
 │   ├── ventas.csv                        # Archivo de prueba Ventas
 │
+├── 📁 deployment/
+│   ├── FICOHSA_Finanzas_Ventas_Pagos_ETL_Dev.ispac # Archivo de deployment
+│
 ├── 📁 docker/
 │   ├── docker-compose.yml                # Archivo de composicion de docker
 │
