@@ -14,10 +14,7 @@ UpgradeLog.htm
 *.bat
 
 # Binarios compilados SSIS
-bin/
-obj/
 *.ispac
 
-# Excepción temporal para entrega
+# Excepcion temporal para entrega
 !deployment/*.ispac
-
