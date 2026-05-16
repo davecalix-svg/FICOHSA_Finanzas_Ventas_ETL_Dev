@@ -1,11 +1,11 @@
 # FICOHSA Finanzas - ETL de Ventas y Pagos
 
-## 📋 Descripción
+## Descripción
 Paquete SSIS para la carga y validación de archivos CSV de Ventas y Pagos hacia SQL Server 2022, con manejo de errores, auditoría de ejecución y despliegue en el catálogo SSISDB.
 
 ---
 
-## 🏗️ Arquitectura del Proyecto
+## Arquitectura del Proyecto
 
 ```
 FICOHSA_Finanzas_Ventas_ETL_Dev/
@@ -27,7 +27,7 @@ FICOHSA_Finanzas_Ventas_ETL_Dev/
 
 ---
 
-## 🗄️ Base de Datos: DemoETL
+## Base de Datos: DemoETL
 
 ### Tablas
 
@@ -41,7 +41,7 @@ FICOHSA_Finanzas_Ventas_ETL_Dev/
 
 ---
 
-## 🔄 Flujo de Datos SSIS
+## Flujo de Datos SSIS
 
 ### Data Flow 1 — CargaVentasCSV
 ```
@@ -67,7 +67,7 @@ SRC_FF_Pagos
 
 ---
 
-## ✅ Validaciones implementadas
+## Validaciones implementadas
 
 ### Ventas
 | Validación | Tipo |
@@ -85,7 +85,7 @@ SRC_FF_Pagos
 
 ---
 
-## 📊 Tabla de Auditoría: LogEjecucion
+## Tabla de Auditoría: LogEjecucion
 
 | Columna | Descripción |
 |---|---|
@@ -104,7 +104,7 @@ SRC_FF_Pagos
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 ### Prerequisitos
 - SQL Server 2022 Developer Edition
@@ -155,7 +155,7 @@ Schedule: Diaria a las 06:00 AM
 
 ---
 
-## 📁 Archivos CSV de prueba
+## Archivos CSV de prueba
 
 ### ventas.csv
 ```
@@ -171,6 +171,6 @@ Descripcion,Referencia,UsuarioCreacion,FechaCreacion
 
 ---
 
-## 👤 Autor
-FICOHSA Finanzas — Equipo ETL  
+## Autor
+David Guzman 
 Fecha: Mayo 2026
