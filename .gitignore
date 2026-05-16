@@ -9,3 +9,15 @@ obj/
 # Logs
 *.log
 UpgradeLog.htm
+
+# Otros
+*.bat
+
+# Binarios compilados SSIS
+bin/
+obj/
+*.ispac
+
+# Excepción temporal para entrega
+!deployment/*.ispac
+

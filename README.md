@@ -10,21 +10,28 @@ Paquete SSIS para la carga y validación de archivos CSV de Ventas y Pagos hacia
 ```
 FICOHSA_Finanzas_Ventas_ETL_Dev/
 │
-├── 📁 sql/
-│   └── 01_Crear_BD_Tablas.sql            # Creación de BD y tablas
+├── 📁 ssis/                              ← Todo el proyecto SSIS
+│   ├── Finanzas_Ventas_CargaCSV_Dev.dtsx
+│   ├── FICOHSA_Finanzas_Ventas_ETL_Dev.dtproj
+│   ├── FICOHSA_Finanzas_Ventas_ETL_Dev.database
+│   ├── FICOHSA_Finanzas_Ventas_ETL_Dev.slnx
+│   └── Project.params
 │
-├── 📁 data/
-│   ├── ventas.csv                        # Archivo de prueba Ventas
+├── 📁 sql/                               ← Scripts de base de datos
+│   └── 01_Crear_BD_Tablas.sql
 │
-├── 📁 deployment/
-│   ├── FICOHSA_Finanzas_Ventas_Pagos_ETL_Dev.ispac # Archivo de deployment
+├── 📁 data/                              ← Archivos de prueba
+│   ├── 📁 DEV/
+│   │   ├── ventas.csv
+│   │   └── pagos.csv
+│   ├── 📁 QA/
+│   │   ├── ventas.csv
+│   │   └── pagos.csv
+│   └── 📁 PROD/
+│       ├── ventas.csv
+│       └── pagos.csv
 │
-├── 📁 docker/
-│   ├── docker-compose.yml                # Archivo de composicion de docker
-│
-├── 📁 ssis/
-│   └── Finanzas_Ventas_CargaCSV_Dev.dtsx  # Paquete SSIS principal
-│
+├── .gitignore
 └── README.md
 ```
 
@@ -138,6 +145,14 @@ SSISDB → Clic derecho → Crear carpeta → FICOHSA
 Visual Studio → Clic derecho en proyecto → Implementar
 Servidor: localhost
 Ruta: /SSISDB/FICOHSA/FICOHSA_Finanzas_Ventas_ETL_Dev
+
+O tambien el archivo `.ispac` en la carpeta `deployment/` 
+puede desplegarse directamente en SSISDB sin 
+necesidad de Visual Studio:
+
+SSMS → Integration Services Catalogs → SSISDB 
+→ Clic derecho → Implementar proyecto → 
+Seleccionar archivo .ispac
 ```
 
 **5. Configurar Environments**
