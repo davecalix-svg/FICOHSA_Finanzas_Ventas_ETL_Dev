@@ -20,7 +20,7 @@ FICOHSA_Finanzas_Ventas_ETL_Dev/
 ├── 📁 sql/                               ← Scripts de base de datos
 │   └── 01_Crear_BD_Tablas.sql
 │
-├── 📁 data/                              ← Archivos de prueba
+├── 📁 data/                              ← Archivos de prueba por ambiente
 │   ├── 📁 DEV/
 │   │   ├── ventas.csv
 │   │   └── pagos.csv
@@ -30,6 +30,12 @@ FICOHSA_Finanzas_Ventas_ETL_Dev/
 │   └── 📁 PROD/
 │       ├── ventas.csv
 │       └── pagos.csv
+│
+├── 📁 docker/                            ← Infraestructura SQL Server
+│   └── docker-compose.yml
+│
+├── 📁 deployment/                        ← Paquete compilado para despliegue
+│   └── FICOHSA_Finanzas_Ventas_ETL_Dev.ispac
 │
 ├── .gitignore
 └── README.md
@@ -117,57 +123,85 @@ SRC_FF_Pagos
 ## Deployment
 
 ### Prerequisitos
-- SQL Server 2022 Developer Edition
+- Docker Desktop
 - SQL Server Integration Services 16.0
 - Visual Studio 2022 con extensión SSIS Projects
 - SSMS 19+
 
 ### Pasos de instalación
 
-**1. Crear la base de datos y tablas**
+**1. Levantar el contenedor de SQL Server**
+
+Desde la carpeta `docker/` ejecutar:
+```cmd
+cd docker
+docker-compose up -d
+```
+
+Verificar que el contenedor esté corriendo:
+```cmd
+docker ps
+```
+Debes ver el contenedor con estado `Up` antes de continuar.
+
+---
+
+**2. Crear la base de datos y tablas**
+
+Conectarse al servidor en SSMS y ejecutar:
 ```sql
--- Ejecutar en SSMS
 01_Crear_BD_Tablas.sql
 ```
 
-**2. Crear el catálogo SSISDB**
+---
+
+**3. Crear el catálogo SSISDB**
 ```
 SSMS → Integration Services Catalogs → Clic derecho → Crear catálogo
 ```
 
-**3. Crear la carpeta en SSISDB**
+---
+
+**4. Crear la carpeta en SSISDB**
 ```
 SSISDB → Clic derecho → Crear carpeta → FICOHSA
 ```
 
-**4. Desplegar el proyecto**
+---
+
+**5. Desplegar el proyecto**
+
+Opción A — Desde Visual Studio:
 ```
-Visual Studio → Clic derecho en proyecto → Implementar
+Clic derecho en proyecto → Implementar
 Servidor: localhost
 Ruta: /SSISDB/FICOHSA/FICOHSA_Finanzas_Ventas_ETL_Dev
-
-O tambien el archivo `.ispac` en la carpeta `deployment/` 
-puede desplegarse directamente en SSISDB sin 
-necesidad de Visual Studio:
-
-SSMS → Integration Services Catalogs → SSISDB 
-→ Clic derecho → Implementar proyecto → 
-Seleccionar archivo .ispac
 ```
 
-**5. Configurar Environments**
+Opción B — Desde el archivo `.ispac` sin necesidad de Visual Studio:
+```
+SSMS → Integration Services Catalogs → SSISDB
+→ Clic derecho → Implementar proyecto
+→ Seleccionar: deployment/FICOHSA_Finanzas_Ventas_ETL_Dev.ispac
+```
+
+---
+
+**6. Configurar Environments**
 ```
 SSISDB → FICOHSA → Environments → Crear:
-  - ENV_DEV  → RutaArchivos = C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV
-  - ENV_QA   → RutaArchivos = C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\QA
-  - ENV_PROD → RutaArchivos = C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\PROD
+  - ENV_DEV  → RutaArchivos = C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV\
+  - ENV_QA   → RutaArchivos = C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\QA\
+  - ENV_PROD → RutaArchivos = C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\PROD\
 ```
 
-**6. Crear el SQL Agent Job**
+---
+
+**7. Crear el SQL Agent Job**
 ```
 SQL Server Agent → Jobs → Nuevo trabajo
-Nombre: JOB_FICOHSA_CargaVentas_Diaria
-Step:   STEP_CargaVentasCSV → SSIS Package → ENV_PROD
+Nombre:   JOB_FICOHSA_CargaVentas_Diaria
+Step:     STEP_CargaVentasCSV → SSIS Package → ENV_PROD
 Schedule: Diaria a las 06:00 AM
 ```
 
@@ -190,5 +224,5 @@ Descripcion,Referencia,UsuarioCreacion,FechaCreacion
 ---
 
 ## Autor
-David Guzman 
+David Guzman  
 Fecha: Mayo 2026
