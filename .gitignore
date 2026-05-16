@@ -9,6 +9,3 @@ obj/
 # Logs
 *.log
 UpgradeLog.htm
-
-# Docker (si no es parte del proyecto)
-docker-compose.yml
