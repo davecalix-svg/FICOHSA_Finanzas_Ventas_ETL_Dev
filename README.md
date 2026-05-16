@@ -143,9 +143,9 @@ Ruta: /SSISDB/FICOHSA/FICOHSA_Finanzas_Ventas_ETL_Dev
 **5. Configurar Environments**
 ```
 SSISDB → FICOHSA → Environments → Crear:
-  - ENV_DEV  → RutaArchivos = C:\Cursos\SSIS\
-  - ENV_QA   → RutaArchivos = C:\QA\Ventas\
-  - ENV_PROD → RutaArchivos = D:\Produccion\Ventas\
+  - ENV_DEV  → RutaArchivos = C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\DEV
+  - ENV_QA   → RutaArchivos = C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\QA
+  - ENV_PROD → RutaArchivos = C:\Cursos\SSIS\FICOHSA_Finanzas_Ventas_ETL_Dev\data\PROD
 ```
 
 **6. Crear el SQL Agent Job**
